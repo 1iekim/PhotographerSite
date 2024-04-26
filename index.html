@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+      <div class="container header-container">
+        <a href="#" class="logo__img">
+            <img src="./assets/svg/logo.svg" alt="logo">
+        </a>
+        <button class="nav-toggle">
+          <span class="nav-toggle__line"></span>
+          <span class="nav-toggle__line"></span>
+          <span class="nav-toggle__line"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">Skills</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#portfolio" class="nav__link">Portfolio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#video" class="nav__link">Video</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#price" class="nav__link">Price</a>
+                </li>                  
+                <li class="nav__item">
+                    <a href="#contacts" class="nav__link">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- <button class="ru__eng">
+          <span class="lang lang--active">en</span>
+          <span>/</span>
+          <span class="lang">ru</span></button>
+      </div> -->
+    </header>
+    <!-- main -->
+    <main>
+        <div class="container">
+            <!-- Hero section -->
+            <section id="hero" class="section hero">
+                <h1 class="hero__name">Alexa Rise</h1>
+                <p class="hero__text">
+                    Save sincere emotions, romantic feelings and
+                    happy moments of life together with professional
+                    photographer Alexa Rise
+                </p>
+                <button class="btn__one hero__btn">Hire me</button>
+            </section>
+            <!-- Skills section -->
+            <section id="skills" class="section skills">
+              <div class="title">
+                <h2 class="section__title">Skills</h2>
+              </div>  
+                <div class="skills__items">
+                    <div class="skills__item">
+                        <img src="./assets/svg/camera.svg" alt="skill img" class="skill__img">
+                        <h3 class="skill__title">Digital photography</h3>
+                        <p class="skill__text">High-quality photos in the studio and on the nature</p>
+                    </div>
+                    <div class="skills__item">
+                        <img src="./assets/svg/video.svg" alt="skill img" class="skill__img">
+                        <h3 class="skill__title">Video shooting</h3>
+                        <p class="skill__text">Capture your moments so that they always stay with you</p>
+                    </div>
+                    <div class="skills__item">
+                        <img src="./assets/svg/image.svg" alt="skill img" class="skill__img">
+                        <h3 class="skill__title">Retouch</h3>
+                        <p class="skill__text">I strive to make photography surpass reality</p>
+                    </div>
+                    <div class="skills__item">
+                        <img src="./assets/svg/mic.svg" alt="skill img" class="skill__img">
+                        <h3 class="skill__title">Audio</h3>
+                        <p class="skill__text">Professional sounds recording for video, advertising, portfolio</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Portfolio section -->
+            <section id="portfolio" class="section portfolio">
+              <div class="title">
+                <h2 class="section__title">Portfolio</h2>
+              </div>
+              <div class="portfolio__buttons">
+                <button class="portfolio__btn">Winter</button>
+                <button class="portfolio__btn">Spring</button>
+                <button class="portfolio__btn">Summer</button>
+                <button class="portfolio__btn portfolio__btn--active">Autumn</button>
+              </div>
+              <div class="portfolio__gallery">
+                <img class="portfolio__img" src="./assets/img/portfolio-au-1.jpg" alt="photography">
+                <img class="portfolio__img" src="./assets/img/portfolio-au-2.jpg" alt="photography">
+                <img class="portfolio__img" src="./assets/img/portfolio-au-3.jpg" alt="photography">
+                <img class="portfolio__img" src="./assets/img/portfolio-au-4.jpg" alt="photography">
+                <img class="portfolio__img" src="./assets/img/portfolio-au-5.jpg" alt="photography">
+                <img class="portfolio__img" src="./assets/img/portfolio-au-6.jpg" alt="photography">
+              </div>
+            </section>
+            <!-- Video section -->
+            <section id="video" class="section video">
+              <div class="title">
+                <h2 class="section__title">Video</h2>
+              </div>
+              <div class="videoplayer">
+                <a href="https://www.youtube.com/" target="_blank">
+                  <button class="play-btn"></button>
+                </a>
+              </div>
+            </section>
+            <!-- Price section -->
+            <section id="price" class="section price">
+              <div class="title">
+                <h2 class="section__title">Price</h2>
+              </div>
+              <div class="price__items">
+                <div class="price__item">
+                  <h4 class="price__title">Standard</h4>
+                  <p class="price__cost">500 $</p>
+                  <span>One location</span>
+                  <span>120 photos in color</span>
+                  <span>12 photos in retouch</span>
+                  <span>Readiness 2-3 weeks</span>
+                  <span>Make up, visage</span>
+                  <button class="price__btn">Order shooting</button>
+                </div>
+                <div class="price__item">
+                  <h4 class="price__title">Premium</h4>
+                  <p class="price__cost">700 $</p>
+                  <span>One or two locations</span>
+                  <span>200 photos in color</span>
+                  <span>20 photos in retouch</span>
+                  <span>Readiness 1-2 weeks</span>
+                  <span>Make up, visage</span>
+                  <button class="price__btn">Order shooting</button>
+                </div>
+                <div class="price__item">
+                  <h4 class="price__title">Gold</h4>
+                  <p class="price__cost">1000 $</p>
+                  <span>Three locations or more</span>
+                  <span>300 photos in color</span>
+                  <span>50 photos in retouch</span>
+                  <span>Readiness 1 week</span>
+                  <span>Make up, visage, hairstyle</span>
+                  <button class="price__btn">Order shooting</button>
+                </div>
+              </div>
+            </section>
+            <!-- Contacts section -->
+            <section id="contacts" class="section contacts">
+                <form class="form-contacts" action="">
+
+                  <h2 class="section__title contacts__title">Contact me</h2>
+                  <label class="contacts__label" for="mail1">
+                    <input class="contacts__input" type="email" id="mail1" placeholder="E-mail" autocomplete="off">
+                  </label>
+                  <label class="contacts__label" for="phone1">
+                    <input class="contacts__input" type="tel" id="phone1" placeholder="Phone" autocomplete="off">
+                  </label>
+                  <textarea class="contacts__text" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                  
+                  <button disabled class="btn__one btn__contacts">Send message</button>
+                </form>
+            </section>
+        </div>
+        <div class="modal">
+          <section class="modal__section section">
+            <form class="form-contacts" action="">
+
+              <h2 class="section__title contacts__title">Contact me</h2>
+              <label for="mail2" class="contacts__label">
+                <input class="contacts__input" type="email" id="mail2" placeholder="E-mail" autocomplete="off">
+              </label>
+              <label for="phone2" class="contacts__label">
+                <input class="contacts__input" type="tel" id="phone2" placeholder="Phone" autocomplete="off">
+              </label>
+              <textarea class="contacts__text" id="" cols="30" rows="10" placeholder="Message"></textarea>
+              
+              <button disabled class="btn__one btn__contacts">Send message</button>
+            </form>
+          </section>
+        </div>
+        <div class="message message--hide">
+          <p>Message sent successfully. </br>Wait for feedback!</p>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="container footer">
+            <div class="footer__git">
+              <span>&copy;</span>
+              <span>2022</span>
+              <a class="footer__git-link" href="#">github</a>
+            </div>
+            <div class="footer__school">
+              <a class="footer__school-link" href="#">Rolling Scopes School</a>
+            </div>
+            <ul class="social">
+                <li class="social__item"><a href="#" class="social__link social__img-inst">
+                    <!-- <img class="social__img" src="./assets/svg/inst.svg" alt="Instagram"> -->
+                </a></li>
+                <li class="social__item"><a href="#" class="social__link social__img-fb">
+                    <!-- <img class="social__img" src="./assets/svg/fb.svg" alt="Facebook"> -->
+                </a></li>
+                <li class="social__item"><a href="#" class="social__link social__img-tw">
+                    <!-- <img class="social__img" src="./assets/svg/tw.svg" alt="Twitter"> -->
+                </a></li>
+                <li class="social__item"><a href="#" class="social__link social__img-pinterest">
+                    <!-- <img class="social__img" src="./assets/svg/pinterest.svg" alt="Pinterest"> -->
+                </a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
