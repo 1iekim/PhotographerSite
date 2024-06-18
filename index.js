@@ -1,12 +1,28 @@
 // Add event for Portfolio BTN
+const portfolioImg = document.querySelectorAll('.portfolio__img');
 const portfolioBtn = document.querySelectorAll(".portfolio__btn");
 
-const handlerClick = (event) => {
-  portfolioBtn.forEach((btn) => btn.classList.remove("portfolio__btn--active"));
-  event.target.classList.add("portfolio__btn--active");
-};
+function portfolioAction(el){
+  if(el.target.classList.contains('portfolio__btn')){
+    let active = document.querySelector('.portfolio__btn--active');
+    active.classList.remove('portfolio__btn--active');
+    el.target.classList.add('portfolio__btn--active');
+    chargeGallery(el.target.dataset.season);
+  }
+}
 
-portfolioBtn.forEach((btn) => btn.addEventListener("click", handlerClick));
+function chargeGallery(x){
+  portfolioImg.forEach((el,i) => el.src = `./assets/img/${x}/${i+1}.jpg`);
+}
+
+portfolioBtn.forEach(el => el.addEventListener('click', portfolioAction));
+
+// const handlerClick = (event) => {
+//   portfolioBtn.forEach((btn) => btn.classList.remove("portfolio__btn--active"));
+//   event.target.classList.add("portfolio__btn--active");
+// };
+
+// portfolioBtn.forEach((btn) => btn.addEventListener("click", handlerClick));
 
 // Add event for Modal OPEN / CLOSE
 

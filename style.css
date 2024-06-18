@@ -355,6 +355,7 @@ main {
 }
 
 .price__items {
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
